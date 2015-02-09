@@ -10,7 +10,7 @@ _install() {
     cd /tmp
 
     # Download the snapshot
-    wget -q https://github.com/thumbor/$pkg/archive/${ver}.zip && \
+    wget q https://github.com/thumbor/$pkg/archive/${ver}.zip && \
         unzip ${ver}.zip >/dev/null && rm -f ${ver}.zip
 
     cd "$pkg-${ver}"
